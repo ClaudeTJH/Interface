@@ -1,0 +1,4 @@
+nh/__pycache__
+interface/__pycache__
+*.pyc
+db.sqlite3

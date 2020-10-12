@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Accueil{% endblock title %}
+
+{% block body %}
+    <a href="{% url 'enveloppe' %}"><input class= "buttonMenu" type="button" value="Enveloppes"></a>
+    <br><br>
+    <a href="{% url 'lindab' %}"><input class= "buttonMenu" type="button" value="Lindab"></a>
+    <br><br>
+    <a href="{% url 'mif' %}"><input class= "buttonMenu" type="button" value="MIF"></a>
+    <br><br>
+    <a href="{% url 'menu' %}"><input class= "buttonMenu" type="button" value="Nièvre Habitat"></a>
+    <br><br>
+    <a href="{% url 'p2r' %}"><input class= "buttonMenu" type="button" value="P2R"></a>
+ {% endblock body%}
+
