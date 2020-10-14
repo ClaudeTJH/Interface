@@ -1,6 +1,8 @@
+import os
+
 from django.shortcuts import render
-# from django.template import RequestContext
-# from .models import LorenzMieForm
+
+from interface.fonctions import lance_application
 
 def menu(request):
     """
@@ -31,8 +33,8 @@ def relance(request):
     docstring
     """
     if request.method == 'POST':
-        pass 
-        return render(request, 'pages/relance.html')
+        lance_application(lanceur='relance')
+        return render(request, 'layouts/prise_en_compte.html')
     return render(request, 'pages/relance.html')
 
 # def LorenzMieView(request):
