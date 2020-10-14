@@ -3,5 +3,11 @@
 {% block title %}P2r{% endblock title %}
 
 {% block body %}
-    <h1>P2r</h1>
+    <h1>Lancer P2R</h1>
+    
+    <form method="POST" action="{% url 'p2r' %}">
+        {% csrf_token %}
+        <br>
+        <div><button  class="buttonMenu" type="submit">Valider</button></div> 
+    </form>
 {% endblock body %}

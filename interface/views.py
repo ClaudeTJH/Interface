@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from .fonctions import lance_application
+
 def index(request):
     """
     docstring
@@ -28,4 +30,7 @@ def p2r(request):
     """
     docstring
     """
+    if request.method == 'POST':
+        lance_application(lanceur='p2r')
+        return render(request, 'layouts/prise_en_compte.html')
     return render(request, 'home/p2r.html')
