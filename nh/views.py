@@ -1,6 +1,4 @@
 from django.shortcuts import render
-# from django.template import RequestContext
-# from .models import LorenzMieForm
 
 def menu(request):
     """
@@ -30,9 +28,6 @@ def relance(request):
     """
     docstring
     """
-    if request.method == 'POST':
-        pass 
-        return render(request, 'pages/relance.html')
     return render(request, 'pages/relance.html')
 
 # def LorenzMieView(request):
