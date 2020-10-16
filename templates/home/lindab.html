@@ -3,5 +3,14 @@
 {% block title %}Lindab{% endblock title %}
 
 {% block body %}
-    <h1>Lindab</h1>
+    <h1>Lancer Lindab</h1>
+    {{ reponse }}    
+    <form method="POST" action="{% url 'lindab' %}">
+        {% csrf_token %}
+        <div>
+            {{ form }}
+            <br><br>
+            <button  class="buttonMenu" type="submit">Valider</button>
+        </div>
+    </form>
 {% endblock body %}
